@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bgcolor {
+    background-color: #5299A6;
+    background-image: linear-gradient(135deg, #4d8995 0%, #76aab3 40%, #e2cfc4 100%);
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 30px 40px;
+}
+
+.school-icon {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 
+        inset 2px 2px 5px rgba(255, 255, 255, 0.6),
+        0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.school-icon:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 
+        inset 2px 2px 8px rgba(255, 255, 255, 0.8),
+        0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.school-cap {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 18px;
+    height: 18px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.icon-letter {
+    font-family: 'Black Ops One', sans-serif;
+    font-size: 38px;
+    color: #ffffff;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    line-height: 1;
+}
+
+.title {
+    color: aliceblue;
+    font-family: 'Black Ops One', cursive, sans-serif;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    padding:0px;
+    margin:0px;
+}
+
+.style {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 40px;
+    width: 270px;
+    padding: 8px;
+    border-radius: 30px;
+    position: fixed;
+    bottom: 24px;
+
+    left: 0;
+    right:0;
+    margin:0 auto;
+
+    z-index: 1000;
+
+    box-shadow:
+        inset 2px -2px 1px -1px rgba(255, 255, 255, 0.692),
+        inset -2px 2px 1px -1px rgba(255, 255, 255, 0.621),
+        inset 6px -6px 1px -6px rgba(255, 255, 255, 0.55),
+        inset -6px 6px 1px -6px rgba(255, 255, 255, 0.55),
+        inset 0 0 2px rgba(0, 0, 0, 0.655),
+        0 4px 8px rgba(0, 0, 0, 0.2);
+
+    background: rgba(218, 74, 74, 0.02);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    cursor:pointer;
+    filter: brightness(0.9);
+    user-select: none;
+}
+
+.doc {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    color: #ffffff;
+}
+
+.doc:hover {
+    transform: scale(1.1);
+}
+
+/* Mobile Responsiveness & Mobile Dock Adjustment */
+@media screen and (max-width: 600px) {
+    body {
+        padding: 12px;
+        overflow-x: hidden;
+    }
+
+    .header-container {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .school-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 15px;
+    }
+
+    .icon-letter {
+        font-size: 28px;
+    }
+
+    .style {
+        width: min(320px, calc(100vw - 32px));
+        height: 44px;
+        padding: 6px 14px;
+        bottom: 16px;
+        border-radius: 25px;
+    }
+
+    .doc {
+        font-size: 14px;
+        padding: 4px 6px;
+    }
+
+    .title {
+        font-size: 2.2rem;
+    }
+}

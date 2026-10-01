@@ -1,0 +1,38 @@
+body{
+    background-color:yellow;
+}
+.title{
+    color:#00ff00;
+    font-size:50px;
+}
+p{
+    color:rgb(255,0,0);
+}
+#Sibaram{
+    color:darkblue;
+    text-decoration:overline;
+}
+#Sarthak{
+    color:red;
+    text-decoration:line-through;
+}
+#Ritik{
+    color:blue;
+    text-decoration:underline;
+}
+#Shibashis{
+    text-decoration:none;
+}
+#style{
+    font-family: "Kalnia Glaze", serif;
+    font-size: 20px;
+    font-style: italic;
+}
+#h1{
+    color: darkred;
+    font-size: 80px;
+    border: 20px dotted rgb(9, 247, 60);
+    margin:0px;
+    padding:20px;
+    text-align: center;
+}

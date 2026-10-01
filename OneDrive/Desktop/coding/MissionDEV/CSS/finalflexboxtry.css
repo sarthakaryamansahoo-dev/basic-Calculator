@@ -1,0 +1,46 @@
+.logo{
+    color:darkgreen;
+    flex: 2 1 50px;
+    text-decoration-color: #f8f9fa;
+    background-color:#121824;
+}
+.navbar{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    flex: 2 2 900px;
+    justify-content:space-between;
+    height:80px;
+    align-items:center;
+    background-color:red;
+    color:darkgreen;
+    text-decoration-color: #f8f9fa;
+}
+.menu{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    flex: 2 2 50px;
+    color:darkgreen;
+    text-decoration-color: #f8f9fa;
+    background-color:#121824;
+}
+.form{
+    display:flex;
+    flex-wrap:wrap;
+    flex:1 1 10px;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items: start;
+    color:darkgreen;
+    background-color:#121824;
+    text-decoration-color: #f8f9fa;
+}
+.bgcolour{
+    background-color:#121824;
+    text-decoration-color: #f8f9fa;
+    color:darkgreen;
+}
