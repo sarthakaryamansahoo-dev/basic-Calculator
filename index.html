@@ -1,77 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="calculate.css">
-  <title>Calculator</title>
-  
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="calculate.css">
+      <title>Calculator</title>
 </head>
 <body>
-  <div id="c1">
-    <input type="text" id="display" readonly>
-    <div class="buttons">
+<div id="c1">
+      <input type="text" id="display" readonly>
+<div class="buttons">
       <button class="b2"  onclick="curDisval ='';
       document.querySelector('#display').value = curDisval;
+      document.querySelector('#display').scrollLeft = 999999;
 ">AC</button>
 
       <button class="b1" onclick="curDisval = curDisval + '1';
       document.querySelector('#display').value = curDisval;
+      document.querySelector('#display').scrollLeft = 999999;
 ">1</button>
 
       <button class="b1"  onclick="curDisval = curDisval + '2';
       document.querySelector('#display').value = curDisval;
+      document.querySelector('#display').scrollLeft = 999999;
 ">2</button>
       <button class="b3"  onclick="curDisval = curDisval + '+';
       document.querySelector('#display').value = curDisval;
+      document.querySelector('#display').scrollLeft = 999999;
 ">+</button>
       <button class="b1"  onclick="curDisval = curDisval + '3';
       document.querySelector('#display').value = curDisval;
+      document.querySelector('#display').scrollLeft = 999999;
 ">3</button>
       <button class="b1"  onclick="curDisval = curDisval + '4';
       document.querySelector('#display').value = curDisval;
+      document.querySelector('#display').scrollLeft = 999999;
 ">4</button>
       <button class="b3"  onclick="curDisval = curDisval + '-';
       document.querySelector('#display').value = curDisval;
+      document.querySelector('#display').scrollLeft = 999999;
 ">-</button>
       <button class="b1"  onclick="curDisval = curDisval + '5';
       document.querySelector('#display').value = curDisval;
+      document.querySelector('#display').scrollLeft = 999999;
 ">5</button>
       <button class="b1"  onclick="curDisval = curDisval + '6';
       document.querySelector('#display').value = curDisval;
+      document.querySelector('#display').scrollLeft = 999999;
 ">6</button>
       <button class="b3"  onclick="curDisval = curDisval + '*';
       document.querySelector('#display').value = curDisval;
+      document.querySelector('#display').scrollLeft = 999999;
 ">*</button>
       <button class="b1"  onclick="curDisval = curDisval + '7';
       document.querySelector('#display').value = curDisval;
+      document.querySelector('#display').scrollLeft = 999999;
 ">7</button>
       <button class="b1" onclick="curDisval = curDisval + '8';
       document.querySelector('#display').value = curDisval;
+      document.querySelector('#display').scrollLeft = 999999;
 ">8</button>
       <button class="b3" onclick="curDisval = curDisval + '/';
       document.querySelector('#display').value = curDisval;
+      document.querySelector('#display').scrollLeft = 999999;
 ">/</button>
 
       <button class="b1"  onclick="let result = eval(curDisval);
       curDisval = result;
       document.querySelector('#display').value = curDisval;
+      document.querySelector('#display').scrollLeft = 999999;
 ">=</button>
 
       <button class="b1"  onclick="curDisval = curDisval + '9';
       document.querySelector('#display').value = curDisval;
+      document.querySelector('#display').scrollLeft = 999999;
 ">9</button>
       <button class="b4"  onclick="curDisval = curDisval + '0';
       document.querySelector('#display').value = curDisval;
+      document.querySelector('#display').scrollLeft = 999999;
 ">0</button>
       <button class="b1"  onclick="curDisval = curDisval + '.';
       document.querySelector('#display').value = curDisval;
+      document.querySelector('#display').scrollLeft = 999999;
 ">.</button>
-    </div>
-  </div>
-    
-    
-
-  <script src="calculate.js"></script>
+</div>
+</div>
+<script src="calculate.js"></script>
 </body>
 </html>

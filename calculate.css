@@ -1,19 +1,44 @@
-#c1{
+*{
+  box-sizing : border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  min-height:100vh;
+  padding:16px;
+}
+  #c1{
   border:1px solid rgba(189, 180, 180, 0.966);
   border-radius:5px;
   width:200px;
   background-color:#0f3057;
+  max-width:340px;
 }
 #display{
   margin:10px;
   width:85%;
+  height:40px;
   font-size: 25px;
   background-color:#e8f4fb;
+  font-size: clamp(20px,6vw,28px);
+  text-align:left;
+  overflow-x: auto;
+  box-sizing:border-box;
+  border:none;
+  border-radius: 8px;
+}
+#display::-webkit-scrollbar{
+  display : none;
 }
 .buttons{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 8px;
+
 }
 .b2{
   width:45px;
@@ -21,6 +46,8 @@
   margin:3px;
   background-color: #fda4af;
   border-radius:5px;
+  cursor:pointer;
+  font-size:clamp(18px,5vw,22px);
 }
 .b1{
   width:45px;
@@ -28,6 +55,8 @@
   margin:3px;
   background-color: #d6ebf7;
   border-radius:5px;
+  cursor:pointer;
+  font-size:clamp(18px,5vw,22px);
 }
 .b3{
   width:45px;
@@ -35,6 +64,8 @@
   margin:3px;
   background-color:#00909e;
   border-radius:5px;
+  cursor:pointer;
+  font-size:clamp(18px,5vw,22px);
 }
 .b4{
   width:45px;
@@ -42,4 +73,7 @@
   margin:3px;
   background-color:#25d1e4;
   border-radius:5px;
+  cursor:pointer;
+  font-size:clamp(18px,5vw,22px);
+
 }
